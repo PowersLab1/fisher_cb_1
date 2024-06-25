@@ -1,0 +1,94 @@
+#instructions {
+    font-size: 30px;
+    font-family: Verdana;
+    text-align: center;
+    padding: 50px;
+}
+#experimentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#trialContainer {
+    display: flex;
+    align-items: center; /* This centers the items vertically. Adjust if needed */
+    justify-content: center; /* Center the items horizontally within the container */
+}
+#fishImagesContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+#fishImagesContainer img {
+    width: 100px; 
+    height: 100px;
+}
+#fish1Container {
+    position: relative;
+    display: inline-block; /* Ensure this container fits the content */
+    border: none; /* Creates a black outline */
+    /* Adjust width and height as per the expected size of fish1 images */
+    width: 105px; /* Needs to be slightly larger than 100px fish image to show up */
+    height: 105px; /* Needs to be slightly larger than 100px fish image size to show up */
+    box-sizing: border-box; /* Ensures border width is included in the width/height */
+}
+#arrowImage {
+    width: 100px; 
+    margin-left: 10px; /* Adds some space between the fish images and the arrow */
+}
+#feedback {
+    text-align: center;
+    padding: 15px;
+    background-color: #ffbc5c;
+    font-size: 24px;
+    font-family: Verdana;
+    height: 25px;
+    /* z-index: 1; */
+}
+#feedbackImage {
+    width: 100px; 
+    height: auto;
+    margin: 0 auto;
+}
+#pondsContainer {
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+#pondsImage {
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    /* border: 2px solid black; */
+}
+
+#overlay {
+    /* display: flex; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#leftPondOverlay, #middlePondOverlay, #rightPondOverlay {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 33%;
+    max-width: 333px;
+    /* background-color: rgba(185, 172, 172, 0.5); */
+    /* margin: 3px; */
+}
+#leftPondOverlay {
+    left: 0;
+}
+#middlePondOverlay {
+    left: 33.33%;
+}
+#rightPondOverlay {
+    right: 0;
+}
